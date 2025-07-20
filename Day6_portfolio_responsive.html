@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+header {
+    background-color: aqua;
+    font-size: xx-large;
+    border: 2px solid black;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+    font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 5000;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.nav1 {
+    display: flex;
+    flex-direction: row;
+    background-color: chartreuse;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    justify-content: space-evenly;
+    
+    
+}
+
+.nav2 {
+    
+    background-color: rgb(219, 35, 164);
+    border: 2px solid black;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    overflow-wrap:break-word;
+    background-color: rgb(255, 217, 0);
+    border: 2px solid black;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+    
+}
+
+.grid2{
+    background-color: rgb(224, 105, 111);
+    color: aqua;
+    font-weight: 1000;
+    border: 2px solid black;
+    padding: 2px;
+    margin: 2px;
+    text-align: left;
+}
+footer {
+    background-color: aqua;
+    border: 2px solid black;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+    font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .grid1 {
+    background-color: blue;
+  }
+
+  .nav1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">Rizwan Header</header>
+        <nav class="nav1">   
+            <div class="nav2">About</div>
+            <div class="nav2">Skills</div>
+            <div class="nav2">Contact Info</div>
+        </nav>
+        <div class="grid1">
+            <div class="grid2">About Me-11111111111111111111111111</div>
+            <div class="grid2">Skills-222222222222222222222222222222222222222222222</div>
+            <div class="grid2">Contact Info-33333333333333333333333333333333333333333333333333</div>
+        </div>
+        <footer class="footer">Rizwan-Footer</footer>
+</body>
+</html>
